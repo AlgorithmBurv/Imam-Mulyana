@@ -1,0 +1,479 @@
+body {
+  font-family: "Lora", "Open Sans", sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  height: 200vh;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #222;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+p {
+  font-family: "Lora", "Open Sans", sans-serif;
+  font-size: 1.2rem !important;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Tombol */
+button,
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  background-color: transparent;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover,
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(
+    45deg,
+    rgba(249, 249, 249, 0.7),
+    rgba(138, 136, 142, 0.7)
+  );
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-left: 2%;
+  border-radius: 10px;
+  width: 95%;
+  z-index: 1000;
+  opacity: 70%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #060606 !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #ffdd57;
+  color: #0b3d91 !important;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* hero */
+.hero {
+  background: url("../Image/bg-1.jpg") no-repeat center center/cover;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Info */
+.info-section {
+  display: flex;
+
+  align-items: center;
+
+  background-color: white;
+  width: 65%;
+  height: 1000px;
+  margin-left: 25%;
+  margin-top: -80px;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.info-card {
+  width: 45%;
+  background: white;
+}
+
+.info-image {
+  height: 100%;
+  width: 50%;
+}
+
+.info-image img {
+  object-fit: cover;
+  object-position: 65% 100%;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Skills */
+.box-skills {
+  width: 100%;
+  margin-top: 120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.title-section {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+.bg-skills {
+  padding-top: 20px;
+  height: 500px;
+  width: 100%;
+  background: url("../Image/bg-2.jpg") no-repeat center center/cover;
+}
+.container-bg-skills {
+  display: flex;
+  justify-content: space-between; /* Memberikan jarak antar box */
+  gap: 15px; /* Jarak antar box */
+
+  padding: 50px;
+}
+.box-bg {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(253, 177, 1);
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: space-between; /* Memberikan jarak antar box */
+  gap: 15px; /* Jarak antar box */
+  padding: 30px;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+/* Gallery */
+.box-gallery {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column; /* Agar elemen diatur dalam satu kolom */
+  align-items: center; /* Tengahkan horizontal */
+  justify-content: center; /* Tengahkan vertikal (jika perlu) */
+}
+.box-gallery h2 {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.carousel-inner {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-inner img {
+  width: 1100px;
+  height: 800px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important; /* Menghapus background */
+  opacity: 1 !important; /* Pastikan tetap terlihat */
+}
+
+/* Testimonials Section */
+
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+}
+
+.testimonial-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+
+/* Contact Section */
+.contact {
+  background: url("../Image/bg.jpg") no-repeat center center/cover;
+  padding: 80px 0;
+  color: white;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact form .form-control {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.contact form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact form .btn {
+  background-color: #28a745;
+  border: none;
+  padding: 10px;
+}
+.social-icons a {
+  margin-right: 20px;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background: #343a40;
+  color: white;
+
+  padding: 5px 5px;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+@media (max-width: 1482px) {
+  .info-section {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+
+  .info-card {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .info-image {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1066px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 800px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    opacity: 100%;
+  }
+  .nav-link {
+    font-weight: 500;
+    color: #060606 !important;
+  }
+  .container-bg-skills {
+    gap: 20px;
+  }
+  .box-bg {
+    height: 120px;
+  }
+  .box-bg i {
+    font-size: 35px !important;
+  }
+  .box-bg p {
+    font-size: 15px !important;
+  }
+}
+@media (min-width: 769px) {
+  #readMoreBtn {
+    display: none; /* Sembunyikan tombol di layar lebih besar */
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+  /* .text-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+  }
+
+  #text {
+    overflow: hidden;
+    max-height: 350px; 
+    transition: max-height 0.5s ease;
+  }
+
+  #readMoreBtn {
+    display: block; 
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 12px;
+    padding-bottom: 10px;
+  } */
+
+  .carousel-inner img {
+    max-height: 400px;
+  }
+  .container-bg-skills {
+    flex-direction: column; /* Agar kotak tersusun ke bawah */
+    align-items: center; /* Tengahkan elemen */
+  }
+  .bg-skills {
+    height: 650px;
+  }
+  .box-bg {
+    height: 100px;
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 577px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .carousel-inner img {
+    max-height: 300px;
+  }
+  .info-card p {
+    font-size: 14px !important;
+  }
+  .box p {
+    font-size: 12px !important;
+  }
+}
