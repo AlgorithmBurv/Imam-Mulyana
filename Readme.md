@@ -1,0 +1,3 @@
+# Attention
+
+This is a **static website** designed to showcase the **portfolio** of **Imam Mulyana**, a passionate individual in the field of **Informatics Engineering**. Imam Mulyana is currently pursuing his studies at **Esa Unggul University**, where he is actively expanding his knowledge and skills in the realm of **technology and innovation**. The website highlights his educational background, skills, and personal achievements, serving as a professional digital representation of his career journey. Here, visitors can learn more about his academic pursuits, his passion for **informatics**, and the projects that define his growth as a future **engineer**.
